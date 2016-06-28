@@ -15,6 +15,7 @@
 		6AE436E31D22B4DA00D9911E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE436E11D22B4DA00D9911E /* LaunchScreen.storyboard */; };
 		6AE436EE1D22B4DA00D9911E /* NavigationbarCustomSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE436ED1D22B4DA00D9911E /* NavigationbarCustomSampleTests.swift */; };
 		6AE436F91D22B4DA00D9911E /* NavigationbarCustomSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE436F81D22B4DA00D9911E /* NavigationbarCustomSampleUITests.swift */; };
+		6AE437071D22B54C00D9911E /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE437061D22B54C00D9911E /* UINavigationControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6AE436F41D22B4DA00D9911E /* NavigationbarCustomSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationbarCustomSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE436F81D22B4DA00D9911E /* NavigationbarCustomSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationbarCustomSampleUITests.swift; sourceTree = "<group>"; };
 		6AE436FA1D22B4DA00D9911E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE437061D22B54C00D9911E /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		6AE436D41D22B4DA00D9911E /* NavigationbarCustomSample */ = {
 			isa = PBXGroup;
 			children = (
+				6AE437061D22B54C00D9911E /* UINavigationControllerExtension.swift */,
 				6AE436D51D22B4DA00D9911E /* AppDelegate.swift */,
 				6AE436D71D22B4DA00D9911E /* ViewController.swift */,
 				6AE436D91D22B4DA00D9911E /* Main.storyboard */,
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					6AE436D11D22B4DA00D9911E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8S93NCBWD3;
 					};
 					6AE436E81D22B4DA00D9911E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -262,6 +266,7 @@
 				6AE436D81D22B4DA00D9911E /* ViewController.swift in Sources */,
 				6AE436DE1D22B4DA00D9911E /* NavigationbarCustomSample.xcdatamodeld in Sources */,
 				6AE436D61D22B4DA00D9911E /* AppDelegate.swift in Sources */,
+				6AE437071D22B54C00D9911E /* UINavigationControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationbarCustomSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.v-force.apps.NavigationbarCustomSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = NavigationbarCustomSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.v-force.apps.NavigationbarCustomSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
